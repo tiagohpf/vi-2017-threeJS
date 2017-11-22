@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Informação sobre Pesca</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/filter-search.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+</head>
+
+<body>
+<div id="container"></div>
+<div id="title">
+    <div data-role="page" class="page">
+        <div data-role="header" class="header">
+            <h1>Pesquisa</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <form id="searchFilterForm" method="post" action="">
+                <p class="attributesLabels"> ID:</p>
+                <select class="idSelector" id="ids">
+                    <option>Todos</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+
+                <br>
+
+                <p class="attributesLabels"> Coordenadas:</p>
+                <input id="latitude" type="text" placeholder="Latitude" disabled/>
+                <input id="longitude" type="text" placeholder="Longitude" disabled/>
+
+                <br>
+
+                <p class="attributesLabels"> Peso (Kg):</p>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <input type="number" name="pesoMin" id="pesoMin" value="0" min="0" max="1000" disabled>
+                    </div>
+                    <div class="ui-block-b">
+                        <input type="number" name="pesoMax" id="pesoMax" value="1000" min="0" max="1000" disabled>
+                    </div>
+                </div>
+
+                <br>
+
+                <p class="attributesLabels"> Velocidade:</p>
+                <input type="number" id="checkData" onchange="updateFieldState(this.id)" disabled>
+
+                <p class="attributesLabels"> Data:</p>
+                <input id="data" type="date" value="2016/12/07" disabled/>
+
+                <div style="display: inline-flex">
+                    <input data-role="button" style="background-color: darkred; opacity: 0.45"
+                           id="btnReset" type="button" value="Limpar">
+                    <input data-role="button" style="background-color: darkgreen; opacity: 0.45"
+                           id="btnFilter" type="button" value="Pesquisar" onclick="getFormValues()">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script src="js/three.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
