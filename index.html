@@ -21,7 +21,7 @@
         <div data-role="main" class="ui-content">
             <form id="searchFilterForm" method="post" action="">
                 <p class="attributesLabels"> ID:</p>
-                <select class="idSelector" id="ids">
+                <select class="selector" id="ids">
                     <option>Todos</option>
                     <option>1</option>
                     <option>2</option>
@@ -49,11 +49,25 @@
                 <br>
 
                 <p class="attributesLabels"> Velocidade:</p>
-                <input type="number" id="checkData" onchange="updateFieldState(this.id)" disabled>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <select class="selector">
+                            <option>=</option>
+                            <option>!=</option>
+                            <option>></option>
+                            <option>>=</option>
+                            <option><</option>
+                            <option><=</option>
+                        </select>
+                    </div>
+                    <div class="ui-block-b">
+                        <input type="number" name="pesoMax" id="speed" value="1000" min="0" max="1000"
+                               onchange="updateFieldState(this.id)" disabled>
+                    </div>
+                </div>
 
-                <p class="attributesLabels"> Data:</p>
-                <input id="data" type="date" value="2016/12/07" disabled/>
-
+                <br>
+                
                 <div style="display: inline-flex">
                     <input data-role="button" style="background-color: darkred; opacity: 0.45"
                            id="btnReset" type="button" value="Limpar">

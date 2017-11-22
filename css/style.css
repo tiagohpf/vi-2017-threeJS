@@ -39,7 +39,7 @@ h1 {
     box-sizing: border-box;
 }
 
-.idSelector option {
+.selector option {
     font-weight: bold;
     font-size: 1em;
     min-height: 1.1em;
