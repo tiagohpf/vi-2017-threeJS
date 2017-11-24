@@ -52,7 +52,7 @@ h1 {
 #title {
     position: absolute;
     top: 10px;
-    width: 300px;
+    width: 315px;
     left: 10px;
     padding: 10px;
     z-index: 10;
@@ -71,13 +71,6 @@ label, .ui-btn {
     font-size: 15px !important;
 }
 
-#pesoMax {
-    margin-left: 148px !important;
-}
-
-#pesoMin, #pesoMax {
-    width: 50px;
-}
 
 .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
     width: 134px;
@@ -90,4 +83,14 @@ label, .ui-btn {
     color: #333;
     font-family: sans-serif;
     font-size: 15px;
+}
+
+#btnReset {
+    background-color: darkred;
+    opacity: 0.45;
+}
+
+#btnSearch {
+    background-color: darkgreen;
+    opacity: 0.45;
 }
