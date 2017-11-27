@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Informação sobre Pesca</title>
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/filter-search.min.css" />
@@ -12,7 +13,8 @@
 </head>
 
 <body>
-<div class="ui-grid-a">
+    <div id="container"></div>
+    <div class="ui-grid-a"></div>
     <div class="ui-block-a">
         <div data-role="page" class="page" id="title">
             <div data-role="header" class="header">
@@ -28,13 +30,13 @@
                     <br>
 
                     <p class="attributesLabels"> Coordenadas:</p>
-                    <input id="latitude" type="text" placeholder="Latitude"/>
-                    <input id="longitude" type="text" placeholder="Longitude"/>
+                    <input id="latitude" type="text" placeholder="Latitude" />
+                    <input id="longitude" type="text" placeholder="Longitude" />
 
                     <br>
 
                     <p class="attributesLabels"> Peso (Kg):</p>
-                    <div data-role="rangeslider"  id="slider-weight" data-mini="true">
+                    <div data-role="rangeslider" id="slider-weight" data-mini="true">
                         <input type="range" id="minWeight" min="0" max="3000">
                         <input type="range" id="maxWeight" min="0" max="3000">
                     </div>
@@ -51,21 +53,28 @@
 
                     <div style="display: inline-flex">
                         <input data-role="button" id="btnReset" type="button" value="Limpar" onclick="resetSearch()">
-                        <input data-role="button" id="btnSearch" type="button" value="Pesquisar"
-                        onclick="filterSearch()">
+                        <input data-role="button" id="btnSearch" type="button" value="Pesquisar" onclick="filterSearch()">
                     </div>
+
+                    <p class="attributesLabels"> Modo de Apresentação:</p>
+                    <select class="selector" id="presentation_mode" onchange="switch_presentation()">
+                        <option value="bola" selected="selected">Semi-esfera</option>
+                        <option value="pin">Icon</option>
+                    </select>
+
                 </form>
             </div>
         </div>
     </div>
-    <div class="ui-block-b" id="output" style="margin-top: 50px; margin-left: 370px"></div>
-</div>
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="js/lib/three.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/data.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </div>
+    <script src="js/lib/three.min.js"></script>
+    <script src="js/lib/sweetalert.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/lib/OrbitControls.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </body>
 
 </html>

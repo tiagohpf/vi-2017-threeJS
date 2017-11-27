@@ -46,10 +46,10 @@ function setMaxsMins() {
 }
 
 function filterSearch() {
-    alert("ID: " + $("#idSelector").val() + "\n" +
+    /*alert("ID: " + $("#idSelector").val() + "\n" +
         "Coordenadas: " + $("#latitude").val() + ", " + $("#longitude").val() + "\n" +
         "Peso: " + $("#minWeight").val() + ", " + $("#maxWeight").val() + "\n" +
-        "Velocidade: " + $("#minSpeed").val() + ", " + $("#maxSpeed").val());
+        "Velocidade: " + $("#minSpeed").val() + ", " + $("#maxSpeed").val());*/
 
     var newIds = getNewId($("#idSelector").val());
     var newLatitudes = getNewLatitude($("#latitude").val());
@@ -66,8 +66,7 @@ function filterSearch() {
             actualInfo.push(data[i]);
         }
     }
-
-    updateOutput();
+    createLocals(actualInfo);
 }
 
 function getMinWeight() {
@@ -153,4 +152,5 @@ function updateOutput() {
 function resetSearch() {
     document.getElementById('searchFilterForm').reset();
     setMaxsMins();
+    filterSearch()
 }
