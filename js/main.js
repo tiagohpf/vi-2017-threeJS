@@ -201,7 +201,8 @@ function createLocals(info) {
 
     for (var i in globe.children) {
         for (var j in info) {
-            if (globe.children[i].sec_id == info[j].id) {
+            if (globe.children[i].sec_id == info[j].id
+                && globe.children[i].name == document.getElementById("presentation_mode").value) {
                 globe.children[i].visible = true;
             }
         }
