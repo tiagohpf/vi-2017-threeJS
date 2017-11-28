@@ -185,7 +185,7 @@ var render = function () {
     controls.update();
     if (moving) {
         // a rotação não estava ao contrário?
-        globe.rotation.y += 0.0005;
+        globe.rotation.y += 0.00005;
     }
     renderer.render(scene, camera);
 }

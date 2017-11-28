@@ -5,7 +5,7 @@
       "weight": 257,
       "date": "2015.02.05",
       "hour": "06:38:00",
-      "latitude": "37,1511",
+      "latitude": "47,1511",
       "longitude": "-8,9464",
       "speed": 0.8
     },
@@ -14,8 +14,8 @@
       "weight": 400,
       "date": "2015.07.01",
       "hour": "11:30:00",
-      "latitude": "40,1411",
-      "longitude": "-8,8568",
+      "latitude": "33,1411",
+      "longitude": "-38,8568",
       "speed": "0.4"
     },
     {
@@ -24,7 +24,7 @@
       "date": "2017.05.04",
       "hour": "12:49:00",
       "latitude": "40,7162",
-      "longitude": "-8,9382",
+      "longitude": "-10,9382",
       "speed": 0.6
     },
     {
@@ -41,8 +41,8 @@
       "weight": 37,
       "date": "2008.06.01",
       "hour": "12:51:00",
-      "latitude": "36,8042",
-      "longitude": "-8,3735",
+      "latitude": "41,5042",
+      "longitude": "5,0735",
       "speed": 0.8
     },
     {
@@ -59,8 +59,8 @@
       "weight": 240,
       "date": "2017.06.27",
       "hour": "08:14:00",
-      "latitude": "37,1472",
-      "longitude": "-8,9304",
+      "latitude": "42,1472",
+      "longitude": "-58,9304",
       "speed": 0.3
     },
     {
@@ -78,16 +78,16 @@
       "date": "2014.03.28",
       "hour": "03:05:00",
       "latitude": "40,4519",
-      "longitude": "-8,8467",
+      "longitude": "-18,8467",
       "speed": 0.2
     },
     {
       "id": "SN971",
-      "weight": 80,
+      "weight": 120,
       "date": "2014.11.15",
       "hour": "22:57:00",
-      "latitude": "40,7091",
-      "longitude": "-8,9269",
+      "latitude": "60,7091",
+      "longitude": "-14,9269",
       "speed": 0.1
     },
     {
@@ -95,8 +95,8 @@
       "weight": 200,
       "date": "2017.09.21",
       "hour": "03:38:00",
-      "latitude": "3,7652",
-      "longitude": "-8,7175",
+      "latitude": "1,7652",
+      "longitude": "-7,7175",
       "speed": 0.3
     },
     {
@@ -104,8 +104,8 @@
       "weight": 1127,
       "date": "2015.11.09",
       "hour": "16:45:00",
-      "latitude": "0,4759",
-      "longitude": "-0,4464",
+      "latitude": "-6,4759",
+      "longitude": "-6,4464",
       "speed": 0.65
     }
   ]
